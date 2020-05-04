@@ -1,0 +1,50 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  position: relative;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(172, 170, 170, 0.8);
+  padding: 10px 0 10px 10px;
+  border: black 2px solid;
+}
+
+.grid-container > div.left {
+  border-right: 0px;
+}
+
+.grid-container > div.right {
+  border-left: 0px;
+}
+
+.flex-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.pencil {
+  background: white;
+  position: absolute;
+  top: 13px;
+  width: 78%;
+  height: 90%;
+}
+
+textarea {
+  width:100%;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 11%;
+}
+
+button {
+  width: 90%;
+  height: 25px;
+  border-radius: 8px;
+}

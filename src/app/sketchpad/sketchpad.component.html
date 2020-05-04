@@ -1,0 +1,40 @@
+<div class="grid-container">
+  <div class="left" [ngSwitch]="actionType">
+    <div class="textarea">
+      <textarea rows="20">Default value Default value</textarea>
+    </div>
+     <div *ngSwitchCase="'pencil'" class="pencil" id="pencil" [hidden]="hideTextArea">
+      <app-canvas></app-canvas>
+    </div>
+  </div>
+  <div class="right flex-container">
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('text')">Text</button>
+    </div>
+    <div class="btn-container">
+      <button type="button"  (click)="onActionClick('pencil')">Pencil</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('shape')">Shape</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('color')">Color</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('size')">Size</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('erase')">Erase</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('undo')">Undo</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('delete')">Delete</button>
+    </div>
+    <div class="btn-container">
+      <button type="button" (click)="onActionClick('expand')">Expand</button>
+    </div>
+  </div>
+</div>
+<!-- <app-canvas></app-canvas> -->
